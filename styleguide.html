@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 'Hind', system-ui, sans-serif;
+  color: #3F4653;
+}
+
+section {
+  padding: 100px;
+  border-block-end: 1px solid #ccc;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -20px;
+}
+
+.grid > div {
+  flex: 1;
+  min-width: 300px;
+  padding-inline: 20px;
+}
+
+@media (width <= 600px) {
+  section {
+    padding: 10px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <h1>Deine Medikamente sortiert und geliefert</h1>
+  <h2 class="color-brand">Deine Medikamente sortiert und geliefert</h2>
+  <h3>Deine Medikamente sortiert und geliefert</h3>
+  <h4 class="color-brand">Deine Medikamente sortiert und geliefert</h4>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque id tempore nihil facere temporibus tempora dicta atque quo earum possimus vel nobis quibusdam, aut voluptatum? Nobis mollitia dolore voluptatum praesentium!</p>
+</section>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+  margin-block-end: 20px;
+}
+
+h1 { font-size: 44px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; font-weight: 600; }
+h4 { font-size: 16px; font-weight: 400; text-transform: uppercase; }
+
+.color-brand {
+  color: #9cabd9;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="grid">
+    <div>
+      <label class="label-text">Input Default</label>
+      <input type="text" placeholder="Placeholder">
+    </div>
+    <div>
+      <label class="label-text">Input Hover/Focus</label>
+      <input type="text" placeholder="Placeholder" style="border-color: #8099e8">
+    </div>
+    <div>
+      <label class="label-text">Input Invalid</label>
+      <input type="text" value="Value" class="invalid">
+      <div class="error">This is an error message.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid">
+    <div>
+      <label class="label-text">Select Default</label>
+      <select>
+        <option>Option</option>
+        <option>Option</option>
+        <option>Option</option>
+      </select>
+    </div>
+    <div>
+      <label class="label-text">Select Hover/Focus</label>
+      <select style="border-color: #8099e8">
+        <option>Option</option>
+        <option>Option</option>
+        <option>Option</option>
+      </select>
+    </div>
+    <div>
+      <label class="label-text">Select Invalid</label>
+      <select class="invalid">
+        <option>Option</option>
+        <option>Option</option>
+        <option>Option</option>
+      </select>
+      <div class="error">This is an error message.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid">
+    <div>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span class="label">I am a default checkbox that is currently unchecked</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span class="label">I am another default checkbox directly beneath that is also unchecked</span>
+      </label>
+    </div>
+    <div>
+      <label class="checkbox">
+        <input type="checkbox" checked>
+        <span class="label">I am a default checkbox that is currently checked</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" checked>
+        <span class="label">I am another default checkbox directly beneath that is also checked</span>
+      </label>
+    </div>
+    <div>
+      <label class="radio">
+        <input type="radio">
+        <span class="label">I am a default radio that is currently unchecked</span>
+      </label>
+      <label class="radio">
+        <input type="radio">
+        <span class="label">I am another default radio directly beneath that is also unchecked</span>
+      </label>
+    </div>
+    <div>
+      <label class="radio">
+        <input type="radio" checked>
+        <span class="label">I am a default radio that is currently checked</span>
+      </label>
+      <label class="radio">
+        <input type="radio" checked>
+        <span class="label">I am another default radio directly beneath that is also checked</span>
+      </label>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid">
+    <div>
+      <button class="btn">Button</button>
+      <br><br>
+      <input type="button" value="Button" class="btn">
+      <br><br>
+      <input type="submit" value="Button" class="btn">
+      <br><br>
+      <a class="btn">Button</a>
+    </div>
+    <div>
+      <button class="btn" style="background: #3f4653">Button</button>
+      <br><br>
+      <input type="button" value="Button" class="btn" style="background: #3f4653">
+      <br><br>
+      <input type="submit" value="Button" class="btn" style="background: #3f4653">
+      <br><br>
+      <a class="btn" style="background: #3f4653">Button</a>
+    </div>
+    <div>
+      <div style="height: calc(100% + 40px); margin: -20px; padding: 20px; background: #8099e8;">
+        <button class="btn inverted">Button</button>
+        <br><br>
+        <input type="button" value="Button" class="btn inverted">
+        <br><br>
+        <input type="submit" value="Button" class="btn inverted">
+        <br><br>
+        <a class="btn inverted">Button</a>
+      </div>
+    </div>
+    <div>
+      <div style="height: calc(100% + 40px); margin: -20px; padding: 20px; background: #8099e8;">
+        <button class="btn inverted" style="color: #fff; background: #3f4653;">Button</button>
+        <br><br>
+        <input type="button" value="Button" class="btn inverted" style="color: #fff; background: #3f4653;">
+        <br><br>
+        <input type="submit" value="Button" class="btn inverted" style="color: #fff; background: #3f4653;">
+        <br><br>
+        <a class="btn inverted" style="color: #fff; background: #3f4653;">Button</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+button,
+select,
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='button'],
+input[type='submit'],
+input[type='date'],
+input[type='file'],
+textarea {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  border-radius: 0;
+  border: 0;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+select {
+  display: block;
+  width: 100%;
+  padding: 12px 14px 10px;
+  border-radius: 3px;
+  border: 2px solid #40404652;
+  transition: .3s;
+}
+
+input[type='text']:hover,
+input[type='number']:hover,
+input[type='password']:hover,
+select:hover {
+  border-color: #8099e8;
+}
+
+input[type='text'].invalid,
+input[type='number'].invalid,
+input[type='password'].invalid,
+select.invalid {
+  color: #db2b30;
+  border-color: #db2b30;
+}
+
+select {
+  background: right 15px center / 16px 16px url(img/icons/basic/expand_more.svg) no-repeat;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.label-text {
+  display: block;
+  margin-block-end: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.error {
+  margin-block-start: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #db2b30;
+}
+
+.checkbox,
+.radio {
+  position: relative;
+  display: block;
+  padding-inline-start: 30px;
+  cursor: pointer;
+}
+
+.checkbox + .checkbox,
+.radio + .radio {
+  margin-block-start: 20px;
+}
+
+.checkbox input,
+.radio input {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px #40404652;
+  transition: .3s;
+}
+
+.checkbox .label a,
+.radio .label a {
+  color: #8099e8;
+}
+
+.checkbox input {
+  border-radius: 3px;
+  background: #fff 1px / 18px;
+}
+
+.radio input {
+  border-radius: 50%;
+}
+
+.checkbox input:checked {
+  background: #8099e8 1px / 18px url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polyline points="3,8.5 6,11.5 13,4.5" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>');;
+  box-shadow: inset 0 0 0 2px #8099e8;
+}
+
+.radio input:checked {
+  background: #8099e8 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 16 16"><circle r="3" fill="%23fff"/></svg>');;
+  box-shadow: inset 0 0 0 2px #8099e8;
+}
+
+a.btn,
+button.btn,
+input[type='button'].btn,
+input[type='submit'].btn {
+  display: block;
+  width: 100%;
+  padding: 18px 10px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 1000px;
+  background: #8099e8;
+  cursor: pointer;
+  transition: .3s;
+}
+
+a.btn:hover,
+button.btn:hover,
+input[type='button'].btn:hover,
+input[type='submit'].btn:hover {
+  background: #3f4653;
+}
+
+a.btn.inverted,
+button.btn.inverted,
+input[type='button'].btn.inverted,
+input[type='submit'].btn.inverted {
+  color: #8099e8;
+  background: #fff;
+}
+
+a.btn.inverted:hover,
+button.btn.inverted:hover,
+input[type='button'].btn.inverted:hover,
+input[type='submit'].btn.inverted:hover {
+  color: #fff;
+  background: #3f4653;
+}
+
+a.btn.btn-small,
+button.btn.btn-small,
+input[type='button'].btn.btn-small,
+input[type='submit'].btn.btn-small {
+  padding: 14px 25px 13px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: none;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="modal-outer">
+    <div class="modal-inner">
+      <div class="modal-header">
+        Lorem Ipsum
+        <div class="modal-close"></div>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi ipsam, totam, aut quod quis voluptatem, doloribus vero recusandae esse accusantium itaque atque necessitatibus ducimus alias laboriosam repellat dignissimos accusamus.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-small">Button</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.modal-outer {
+  margin: -100px;
+  padding: 100px;
+  background: rgb(0 0 0 / 50%);
+}
+
+.modal-inner {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
+}
+
+.modal-header {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 30px 25px;
+  border-block-end: 1px solid #eee;
+}
+
+.modal-close {
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/icons/basic/close.svg);
+  background-size: contain;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  border-block-start: 1px solid #eee;
+}
+
+.modal-footer .btn {
+  width: auto;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="btn-funnel-wrapper">
+    <input id="btn1" type="radio" name="row1" checked>
+    <label for="btn1" class="btn-funnel">
+      <img src="img/icons/minifunnel/every_week.svg">
+      Jede Woche
+    </label>
+    <input id="btn2" type="radio" name="row1">
+    <label for="btn2" class="btn-funnel">
+      <img src="img/icons/minifunnel/once_or_twice.svg">
+      Jede Woche
+    </label>
+    <input id="btn3" type="radio" name="row1">
+    <label for="btn3" class="btn-funnel">
+      <img src="img/icons/minifunnel/sometimes.svg">
+      Jede Woche
+    </label>
+  </div>
+</section>
+
+<section>
+  <div class="btn-funnel-wrapper">
+    <input id="btn4" type="radio" name="row2" checked>
+    <label for="btn4" class="btn-funnel">
+      <img src="img/icons/minifunnel/for_me.svg">
+      Für mich
+    </label>
+    <input id="btn5" type="radio" name="row2">
+    <label for="btn5" class="btn-funnel">
+      <img src="img/icons/minifunnel/for_family.svg">
+      Für meine Lieben
+    </label>
+  </div>
+</section>
+
+<section>
+  <div class="btn-funnel-wrapper">
+    <input id="btn6" type="radio" name="row3" checked>
+    <label for="btn6" class="btn-funnel">
+      <span>1-3</span>
+      Medikamente
+    </label>
+    <input id="btn7" type="radio" name="row3">
+    <label for="btn7" class="btn-funnel">
+      <span>4-6</span>
+      Medikamente
+    </label>
+    <input id="btn8" type="radio" name="row3">
+    <label for="btn8" class="btn-funnel">
+      <span>7-9</span>
+      Medikamente
+    </label>
+    <input id="btn9" type="radio" name="row3">
+    <label for="btn9" class="btn-funnel">
+      <span>10+</span>
+      Medikamente
+    </label>
+  </div>
+</section>
+
+<section>
+  <div class="btn-funnel-wrapper">
+    <input id="btn10" type="checkbox" name="row4" checked>
+    <label for="btn10" class="btn-funnel">
+      <img src="img/icons/minifunnel/morning.svg">
+      Morgens
+    </label>
+    <input id="btn11" type="checkbox" name="row4">
+    <label for="btn11" class="btn-funnel">
+      <img src="img/icons/minifunnel/lunch.svg">
+      Mittags
+    </label>
+    <input id="btn12" type="checkbox" name="row4">
+    <label for="btn12" class="btn-funnel">
+      <img src="img/icons/minifunnel/afternoon.svg">
+      Abends
+    </label>
+  </div>
+</section>
+
+<section>
+  <div class="btn-funnel-wrapper">
+    <input id="btn13" type="checkbox" name="row5" checked>
+    <label for="btn13" class="btn-funnel">
+      <img src="img/icons/minifunnel/inhaler.svg">
+      ein Inhalator
+    </label>
+    <input id="btn14" type="checkbox" name="row5">
+    <label for="btn14" class="btn-funnel">
+      <img src="img/icons/minifunnel/insulin.svg">
+      Insulin
+    </label>
+    <input id="btn15" type="checkbox" name="row5">
+    <label for="btn15" class="btn-funnel">
+      <img src="img/icons/minifunnel/pills.svg">
+      Pillen
+    </label>
+    <input id="btn16" type="checkbox" name="row5">
+    <label for="btn16" class="btn-funnel">
+      <img src="img/icons/minifunnel/vitamins.svg">
+      Vitamine
+    </label>
+    <input id="btn17" type="checkbox" name="row5">
+    <label for="btn17" class="btn-funnel">
+      <img src="img/icons/minifunnel/other.svg">
+      Anderes
+    </label>
+  </div>
+</section>
+
+<style>
+.btn-funnel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-funnel-wrapper input {
+  position: absolute;
+  opacity: 0;
+}
+
+.btn-funnel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding-block-start: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #40404652;
+  background: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-funnel span {
+  display: block;
+  height: 80px;
+  margin-block: 10px;
+  margin-inline: auto;
+  font-size: 65px;
+  line-height: 1;
+  color: #8099e8;
+}
+
+.btn-funnel img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-block-end: 20px;
+  margin-inline: auto;
+}
+
+.btn-funnel:hover {
+  border-color: #8099e8;
+  box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+}
+
+input:checked + .btn-funnel {
+  border-color: #8099e8;
+  background: #f2f4fc;
+  box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+}
+
+.btn-funnel::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  background: no-repeat #8099e8 center / 30px url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polyline points="3,8.5 6,11.5 13,4.5" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>');
+  opacity: 0;
+  transition: .3s;
+}
+
+input:checked + .btn-funnel::after {
+  opacity: 1;
+}
+
+@media (width <= 600px) {
+  .btn-funnel {
+    width: 150px;
+    height: 150px;
+    padding-block-start: 30px;
+  }
+  .btn-funnel span {
+    height: 60px;
+    margin-block-end: -10px;
+    font-size: 45px;
+  }
+  .btn-funnel img {
+    width: 60px;
+    height: 60px;
+    margin-block-end: 10px;
+  }
+  .btn-funnel::after {
+    width: 25px;
+    height: 25px;
+    background-size: 18px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="grid">
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/get_started.svg" style="width: 50px;">
+      <h2 class="color-brand">Los geht's</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/shipping_adress.svg" style="width: 50px;">
+      <h2 class="color-brand">Deine Adresse</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/about_me.svg" style="width: 50px;">
+      <h2 class="color-brand">Über dich</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/doctor.svg" style="width: 50px;">
+      <h2 class="color-brand">Füge deinen Arzt hinzu</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/prescription1.svg" style="width: 50px;">
+      <h2 class="color-brand">Verschreibung hinzufügen</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/prescription2.svg" style="width: 50px;">
+      <h2 class="color-brand">E-Rezept</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/otc.svg" style="width: 50px;">
+      <h2 class="color-brand">OTC hinzufügen</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/packaging.svg" style="width: 50px;">
+      <h2 class="color-brand">Verpackung auswählen</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+    <div style="min-width: 50%;">
+      <img src="img/icons/onboarding/overview.svg" style="width: 50px;">
+      <h2 class="color-brand">Übersicht</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus fuga necessitatibus praesentium voluptatem adipisci, commodi perspiciatis nesciunt ipsa tenetur reiciendis distinctio, rem officia ullam error eum magnam velit quos!</p>
+      <br><br><br>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="grid">
+    <div>
+      <div class="btn-packaging-wrapper">
+        <input id="packaging1" type="radio" name="packaging1" checked>
+        <label for="packaging1" class="btn-packaging">
+          <span>Premium</span>
+          15€ einmalige Kosten
+        </label>
+        <input id="packaging2" type="radio" name="packaging1">
+        <label for="packaging2" class="btn-packaging">
+          <span>Einweg</span>
+          Keine zusätzlichen Kosten
+        </label>
+        <div class="btn-packaging-image"></div>
+      </div>
+    </div>
+    <div>
+      <div class="btn-packaging-wrapper">
+        <input id="packaging3" type="radio" name="packaging2">
+        <label for="packaging3" class="btn-packaging btn-comingsoon">
+          <span>Premium</span>
+          15€ einmalige Kosten
+        </label>
+        <input id="packaging4" type="radio" name="packaging2" checked>
+        <label for="packaging4" class="btn-packaging">
+          <span>Einweg</span>
+          Keine zusätzlichen Kosten
+        </label>
+        <div class="btn-packaging-image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.btn-packaging-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  border: 1px solid #40404652;
+  overflow: hidden;
+}
+
+.btn-packaging-wrapper input {
+  position: absolute;
+  opacity: 0;
+}
+
+.btn-packaging {
+  position: relative;
+  flex: 1;
+  padding: 65px 20px 20px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.btn-comingsoon {
+  pointer-events: none;
+}
+
+.btn-comingsoon::before {
+  content: 'COMING SOON';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  height: 200%;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background: rgb(255 255 255 / 70%);
+  transform: rotate(-20deg);
+}
+
+.btn-packaging:last-of-type {
+  border-inline-start: 1px solid #40404652;
+}
+
+.btn-packaging span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-packaging::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 1000px;
+  border: 1px solid #8099e8;
+  background: no-repeat #fff center / 20px url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polyline points="3,8.5 6,11.5 13,4.5" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>');
+  transition: .3s;
+}
+
+input:checked + .btn-packaging::after {
+  background-color: #8099e8;
+}
+
+.btn-packaging-image {
+  order: -1;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  transition: .3s;
+}
+
+input:first-of-type:checked ~ .btn-packaging-image { background-image: url(https://images.unsplash.com/photo-1631980838946-755ba8443ab7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80); }
+input:last-of-type:checked ~ .btn-packaging-image { background-image: url(https://images.unsplash.com/photo-1631980839413-ca0cfaec582d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80); }
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div style="max-width: 50%; margin: 0 auto;">
+    <img src="img/icons/onboarding/overview.svg" style="width: 50px;">
+    <h2 class="color-brand">Fast geschafft</h2>
+    <p>Hier finden Sie eine Zusammenfassung Ihrer Auswahl inkl. einiger rechtlicher Checkboxes. Mit dem Klick auf Senden schließen Sie die Bestellung ab.</p>
+    <ul class="summary">
+      <li>
+        <div>
+          Apothekenbesuche
+        </div>
+        <div>
+          Jede Woche
+        </div>
+      </li>
+      <li>
+        <div>
+          Hellomed Nutzung
+        </div>
+        <div>
+          Für mich
+        </div>
+      </li>
+      <li>
+        <div>
+          Rezepte sind für
+        </div>
+        <div>
+          7-9 Medikamente
+        </div>
+      </li>
+      <li>
+        <div>
+          Einnahme der Medikamente
+        </div>
+        <div>
+          Morgens, Mittags, Abends
+        </div>
+      </li>
+      <li>
+        <div>
+          Ebenfalls benötigt
+        </div>
+        <div>
+          Pillen, Vitamine, Insulin
+        </div>
+      </li>
+    </ul>
+    <br><br>
+    <h2>Ihre Rezept Erfassung</h2>
+    <p>Wir melden uns bei Ihnen zur Erfassung Ihres Rezeptes.</p>
+    <br><br>
+    <div class="grid">
+      <div>
+        <label class="label-text">Vorname</label>
+        <input type="text" placeholder="Placeholder">
+        <br>
+      </div>
+      <div>
+        <label class="label-text">Nachname</label>
+        <input type="text" placeholder="Placeholder">
+        <br>
+      </div>
+      <div>
+        <label class="label-text">E-Mail</label>
+        <input type="text" placeholder="Placeholder">
+      </div>
+      <div>
+        <label class="label-text">Telefon</label>
+        <input type="text" placeholder="Placeholder">
+      </div>
+    </div>
+    <br>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="label">
+        Bitte akzeptieren Sie unsere <a>AGB und Datenschutz</a> Bestimmungen
+      </span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="label">
+        Sie erteilen uns hiermit eine Einwilligung zum Datenschutz medizinischer Daten
+      </span>
+    </label>
+    <br><br>
+    <button class="btn">Senden</button>
+  </div>
+</section>
+
+<section>
+  <div style="max-width: 50%; margin: 0 auto;">
+    <img src="img/icons/onboarding/overview.svg" style="width: 50px;">
+    <h2 class="color-brand">Fast geschafft</h2>
+    <p>Hier finden Sie eine Zusammenfassung Ihrer Auswahl inkl. einiger rechtlicher Checkboxes. Mit dem Klick auf Senden schließen Sie die Bestellung ab.</p>
+    <ul class="summary">
+      <li>
+        <div>
+          3 Rezepte
+          <span>Aspirin</span>
+          <span>Ibuprofen</span>
+          <span>Paracetamol</span>
+        </div>
+        <div>
+          Zuzahlung
+        </div>
+      </li>
+      <li>
+        <div>
+          2 OTCs
+          <span>COVID Test</span>
+          <span>COVID Masken</span>
+        </div>
+        <div>
+          Zuzahlung
+        </div>
+      </li>
+      <li>
+        <div>
+          Service
+          <span>Vorsortieren und automatisch nachfüllen</span>
+        </div>
+        <div>
+          0.00€
+        </div>
+      </li>
+      <li>
+        <div>
+          Versand
+          <span>Versandstatus per E-Mail erhalten</span>
+        </div>
+        <div>
+          0.00€
+        </div>
+      </li>
+      <li>
+        <div>
+          Support und Blister
+          <span>Jederzeit verfügbar</span>
+        </div>
+        <div>
+          0.00€
+        </div>
+      </li>
+      <li class="cost">
+        <div>
+          Zuzahlung
+          <span>Geschätzte monatliche Kosten</span>
+        </div>
+        <div>
+          100€ - 200€
+        </div>
+      </li>
+    </ul>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="label">
+        Bitte akzeptieren Sie unsere <a>AGB und Datenschutz</a> Bestimmungen
+      </span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="label">
+        Sie erteilen uns hiermit eine Vollmacht zur Rezeptnachbestellung beim Arzt
+      </span>
+    </label>
+    <label class="checkbox">
+      <input type="checkbox">
+      <span class="label">
+        Sie erteilen uns hiermit eine Einwilligung zum Datenschutz medizinischer Daten
+      </span>
+    </label>
+    <br><br>
+    <button class="btn">Senden</button>
+  </div>
+</section>
+
+<style>
+ul.summary {
+  list-style: none;
+  margin-block: 30px;
+  border-radius: 8px;
+  border: 1px solid #40404652;
+  box-shadow: 0 0 15px rgb(0 0 0 / 7%);
+  overflow: hidden;
+}
+
+ul.summary li {
+  display: flex;
+  padding: 20px;
+}
+
+ul.summary li:not(:last-child) {
+  border-block-end: 1px solid #40404652;
+}
+
+ul.summary li.cost {
+  border-block-end: 0;
+  background: #d6f6cc;
+}
+
+ul.summary li > div {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+ul.summary li > div:last-child {
+  text-align: right;
+}
+
+ul.summary li span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #40404652;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="done">
+    <span>Fertig!</span>
+    Der Vorgang wurde abgeschlossen.
+  </div>
+</section>
+
+<style>
+.done {
+  padding-block-start: 150px;
+  max-width: 250px;
+  margin-inline: auto;
+  text-align: center;
+  background: center top / 100px 100px no-repeat url(img/icons/basic/done.svg);
+}
+
+.done span {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  margin-block-end: 10px;
+}
+</style>
