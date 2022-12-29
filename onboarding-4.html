@@ -23,28 +23,41 @@
   <div class="hm-auth-form">
     <div class="row gy-3">
       <div class="col-12">
-        <div class="h2 m-0">Anmeldung</div>
+        <div class="h3 mb-3">
+          <img src="img/icons/onboarding/onboarding-4.svg">
+          Versicherungsinformation
+        </div>
       </div>
       <div class="col-12">
-        <div class="form-floating">
-          <input type="text" class="form-control" placeholder=" ">
-          <label>E-Mail</label>
+        <div class="progress">
+          <div class="progress-bar" style="width: 100%;">Schritt 4/4</div>
+        </div>
+      </div>
+      <div class="col-12">
+        Wie sind Sie versichert?
+        <div class="btn-group d-flex mt-2">
+          <input type="radio" class="btn-check" name="btnradio" id="test1" autocomplete="off">
+          <label class="btn btn-outline-primary" for="test1">Privat</label>
+          <input type="radio" class="btn-check" name="btnradio" id="test2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="test2">Gesetzlich</label>
         </div>
       </div>
       <div class="col-12">
         <div class="form-floating">
           <input type="text" class="form-control" placeholder=" ">
-          <label>Passwort</label>
+          <label>Name der Krankenversicherung</label>
         </div>
       </div>
       <div class="col-12">
-        <button type="button" class="btn btn-primary btn-lg">Anmelden</button>
+        <div class="form-floating">
+          <input type="text" class="form-control" placeholder=" ">
+          <label>Versicherungsnummer (optional)</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-primary btn-lg">Weiter</button>
       </div>
     </div>
-  </div>
-  <div class="text-center">
-    <a class="text-secondary" href="auth-passwort.html">Passwort vergessen?</a>
-    <a class="text-secondary" href="auth-registrierung.html">Noch kein Mitglied? Jetzt registrieren!</a>
   </div>
 </div>
 

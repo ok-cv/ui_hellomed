@@ -63,6 +63,17 @@ h4, .h4 { font-size: 16px; font-weight: 400; text-transform: uppercase; }
   margin: -10px 0 0 10px;
 }
 
+.h3:has(img) {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.h3:has(img) img {
+  width: 50px;
+  margin-right: 10px;
+}
+
 
 
 /******************************************************************************/
@@ -96,7 +107,7 @@ h4, .h4 { font-size: 16px; font-weight: 400; text-transform: uppercase; }
 }
 
 main {
-  padding-block: calc(var(--header) + var(--spacing));
+  padding-block: calc(var(--header) + var(--spacing)) var(--spacing);
 }
 
 .hm-footer {
@@ -108,12 +119,6 @@ main {
   display: inline-block;
   margin: 0 10px;
   color: var(--text-secondary);
-}
-
-.hm-footer img {
-  display: inline-block;
-  height: 30px;
-  margin: var(--spacing) 10px 0;
 }
 
 @media (width <= 768px) {
@@ -359,7 +364,7 @@ main {
 .hm-auth-wrap {
   max-width: 500px;
   margin: 0 auto;
-  padding: 100px 15px 100px;
+  padding: 100px 15px var(--spacing);
 }
 
 .hm-auth-wrap .hm-logo {
@@ -674,7 +679,8 @@ th {
 }
 
 .progress-bar {
-  padding: 1px 0 0;
+  padding: 4px 0 2px;
+  font-size: 14px;
   background: var(--color-hellomed);
 }
 
@@ -695,14 +701,6 @@ th {
 .badge {
   padding: 4px 8px 2px;
   font-weight: 500;
-}
-
-.alert-danger {
-  --bs-alert-color: #a33341;
-  --bs-alert-bg: #ffc8cf;
-  --bs-alert-border-color: #ffc8cf;
-  padding: 12px 20px 10px;
-  font-size: 14px;
 }
 
 .badge.text-bg-success {
@@ -732,47 +730,4 @@ a:has(.bi-pencil-fill) {
 
 a:has(.bi-pencil-fill) i {
   margin-right: 3px;
-}
-
-
-
-/******************************************************************************/
-
-
-
-/* making the class for the pill dynamic, based on the $status variable sent from PHP  */
-
-.text-bg-Wartend,
-.text-bg-Pending {
-  color: #000 !important;
-  background-color: rgb(255 193 7 / var(--bs-bg-opacity, 1)) !important;
-}
-
-.text-bg-Aktiv,
-.text-bg-Aktive {
-  color: #fff !important;
-  background-color: rgb(25 135 84 / var(--bs-bg-opacity, 1)) !important;
-}
-
-.text-bg-Disabled,
-.text-bg-Gefähred  {
-  color: #fff !important;
-  background-color: rgb(220 53 69 / var(--bs-bg-opacity, 1)) !important;
-}
-
-.text-bg-Inaktiv {
-  color: #fff !important;
-  background-color: rgb(108 117 125 / var(--bs-bg-opacity, 1)) !important;
-}
-
-
-
-/******************************************************************************/
-
-
-
-/* Hiding input field and switching to button */
-
-#hideInputLog {
-  display: none;
 }
